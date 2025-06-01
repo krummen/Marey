@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktive Übungen: Die Entstehung des Bodens</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f0; 
+            color: #3a2e20; 
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border: 1px solid #d4c8b0; 
+        }
+        h1, h2, h3 {
+            color: #5d4037; 
+        }
+        .question {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 4px solid #8d6e63; 
+            background-color: #f5f0e1; 
+        }
+        .question p {
+            margin-top: 0;
+        }
+        input[type="text"], select, textarea {
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 18px); 
+            max-width: 350px;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 60px;
+        }
+        button {
+            background-color: #795548; 
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #5d4037;
+        }
+        .feedback {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .correct {
+            color: #2e7d32; 
+        }
+        .question.correct {
+            border-left-color: #4caf50;
+        }
+        .incorrect {
+            color: #c62828;
+        }
+        .question.incorrect {
+            border-left-color: #f44336;
+        }
+        .explanation {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+        }
+        .anforderungsbereich {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interaktive Übungen: Die Entstehung des Bodens</h1>
+    <p>Hallo! Bearbeite die folgenden Aufgaben, um dein Wissen über die Entstehung des Bodens zu testen und zu vertiefen. Du kannst versuchen, deine Antworten in die Textfelder zu diktieren, wenn du Chrome benutzt (achte auf das Mikrofonsymbol im Feld).</p>
+
+    <div class="container">
+        <h2>Teil 1: Grundlagen und Einflussfaktoren (AFB 1)</h2>
+        <p class="anforderungsbereich">Anforderungsbereich 1: Wissen wiedergeben</p>
+
+        <div class="question">
+            <p><strong>Aufgabe 1: Einflussfaktoren der Bodenbildung</strong><br>
+            Dein Mindmap zeigt verschiedene Faktoren, die die Entstehung von Boden beeinflussen. Nenne vier dieser Faktoren.</p>
+            1. <input type="text" id="q1_faktor1" placeholder="Faktor 1" x-webkit-speech><br>
+            2. <input type="text" id="q1_faktor2" placeholder="Faktor 2" x-webkit-speech><br>
+            3. <input type="text" id="q1_faktor3" placeholder="Faktor 3" x-webkit-speech><br>
+            4. <input type="text" id="q1_faktor4" placeholder="Faktor 4" x-webkit-speech><br>
+            <div id="feedback_q1" class="feedback"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>Aufgabe 2: Arten der Gesteinsverwitterung</strong><br>
+            Erkläre kurz, was man unter "Temperatursprengung" (auch Insolationsverwitterung genannt) versteht.</p>
+            <textarea id="q2_temp" placeholder="Deine Erklärung zur Temperatursprengung..." x-webkit-speech></textarea>
+            <div id="feedback_q2_temp" class="feedback"><i>Wichtige Stichpunkte: Temperaturunterschiede, Ausdehnung/Zusammenziehen, Zermürbung.</i></div>
+
+            <p>Erkläre kurz, was man unter "Frostsprengung" versteht.</p>
+            <textarea id="q2_frost" placeholder="Deine Erklärung zur Frostsprengung..." x-webkit-speech></textarea>
+            <div id="feedback_q2_frost" class="feedback"><i>Wichtige Stichpunkte: Wasser in Spalten, Gefrieren, Volumenvergrößerung, Sprengwirkung.</i></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Teil 2: Prozesse verstehen und anwenden (AFB 2)</h2>
+        <p class="anforderungsbereich">Anforderungsbereich 2: Wissen anwenden und Zusammenhänge erklären</p>
+
+        <div class="question">
+            <p><strong>Aufgabe 3: Der Mechanismus der Frostsprengung</strong><br>
+            Bei der Frostsprengung dringt Wasser in Gesteinsspalten ein und gefriert. Was passiert dabei mit dem Volumen des Wassers und welche Folge hat das für das Gestein?</p>
+            <ul>
+                <li><label><input type="radio" name="q3_frost" value="a"> Das Volumen des Wassers verringert sich, wodurch das Gestein zusammengepresst wird.</label></li>
+                <li><label><input type="radio" name="q3_frost" value="b"> Das Volumen des Wassers vergrößert sich um etwa 10%, wodurch ein starker Druck auf das Gestein ausgeübt wird und es gesprengt werden kann.</label></li>
+                <li><label><input type="radio" name="q3_frost" value="c"> Das Volumen des Wassers bleibt gleich, aber das Eis ist härter als das Gestein und bricht es.</label></li>
+            </ul>
+            <div id="feedback_q3_frost" class="feedback"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>Aufgabe 4: Die Rolle des Klimas</strong><br>
+            Das Klima ist ein wichtiger Einflussfaktor bei der Bodenbildung. Erkläre, wie die Temperatursprengung mit dem Klima zusammenhängt.</p>
+            <textarea id="q4_klima_temp" placeholder="Zusammenhang Klima und Temperatursprengung..." x-webkit-speech></textarea>
+            <div id="feedback_q4_klima_temp" class="feedback"><i>Denke an Gebiete mit großen täglichen Temperaturschwankungen.</i></div>
+        </div>
+
+        <div class="question">
+            <p><strong>Aufgabe 5: Die Rolle der Lebewesen</strong><br>
+            Pflanzen und Tiere spielen eine Rolle bei der Bodenbildung. Wähle aus, welche Aussage dazu FALSCH ist:</p>
+            <ul>
+                <li><label><input type="radio" name="q5_lebewesen" value="a"> Wurzeln von Pflanzen können Gestein aufbrechen und lockern.</label></li>
+                <li><label><input type="radio" name="q5_lebewesen" value="b"> Abgestorbene Pflanzenteile und Tierkadaver werden zu Humus zersetzt, der den Boden fruchtbar macht.</label></li>
+                <li><label><input type="radio" name="q5_lebewesen" value="c"> Tiere, wie Regenwürmer, verdichten den Boden und machen ihn undurchlässiger für Wasser und Luft.</label></li>
+                <li><label><input type="radio" name="q5_lebewesen" value="d"> Mikroorganismen (z.B. Bakterien, Pilze) sind entscheidend für die Zersetzung von organischem Material.</label></li>
+            </ul>
+            <div id="feedback_q5_lebewesen" class="feedback"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Teil 3: Komplexere Zusammenhänge und Bewertung (AFB 3)</h2>
+        <p class="anforderungsbereich">Anforderungsbereich 3: Problemlösen, Bewerten und Reflektieren</p>
+
+        <div class="question">
+            <p><strong>Aufgabe 6: Verwitterung vergleichen</strong><br>
+            In welchen Klimazonen ist die Frostsprengung typischerweise am wirksamsten? Begründe deine Antwort.</p>
+            <textarea id="q6_frost_klima" placeholder="Klimazonen und Begründung..." x-webkit-speech></textarea>
+            <div id="feedback_q6_frost_klima" class="feedback"><i>Denke darüber nach, wo Temperaturen häufig um den Gefrierpunkt schwanken und genügend Feuchtigkeit vorhanden ist.</i></div>
+
+            <p>Und in welchen Klimazonen ist die Temperatursprengung (Insolationsverwitterung) besonders stark ausgeprägt? Begründe auch hier.</p>
+            <textarea id="q6_temp_klima" placeholder="Klimazonen und Begründung..." x-webkit-speech></textarea>
+            <div id="feedback_q6_temp_klima" class="feedback"><i>Denke an Gebiete mit starker Sonneneinstrahlung und großen Temperaturunterschieden zwischen Tag und Nacht.</i></div>
+        </div>
+
+        <div class="question">
+            <p><strong>Aufgabe 7: Der Faktor Zeit</strong><br>
+            Die "Entwicklungszeit" ist einer der Einflussfaktoren aus deinem Mindmap. Warum ist Zeit ein so wichtiger Faktor bei der Bodenbildung? Erkläre in 2-3 Sätzen.</p>
+            <textarea id="q7_zeit" placeholder="Bedeutung der Zeit für Bodenbildung..." x-webkit-speech></textarea>
+            <div id="feedback_q7_zeit" class="feedback"><i>Überlege, wie schnell die Prozesse der Verwitterung und Humusbildung ablaufen.</i></div>
+        </div>
+
+        <div class="question">
+            <p><strong>Aufgabe 8: Menschlicher Einfluss</strong><br>
+            Der Mensch wird auch als Einflussfaktor genannt. Nenne ein Beispiel, wie der Mensch die Bodenbildung oder vorhandenen Boden positiv beeinflussen kann, und ein Beispiel für einen negativen Einfluss.</p>
+            Positiver Einfluss: <input type="text" id="q8_mensch_pos" placeholder="Positiver Einfluss..." x-webkit-speech><br>
+            Negativer Einfluss: <input type="text" id="q8_mensch_neg" placeholder="Negativer Einfluss..." x-webkit-speech><br>
+            <div id="feedback_q8_mensch" class="feedback"><i>Diese Frage wird nur teilweise automatisch bewertet. Besprich deine Antworten mit deiner Lehrkraft. Mögliche positive Beispiele: Kompostierung, sorgsame Landwirtschaft. Negative: Versiegelung, Monokulturen, Abholzung.</i></div>
+        </div>
+    </div>
+
+    <button onclick="checkAllAnswers()">Alle Antworten prüfen und Auswertung anzeigen</button>
+    <div id="overall_feedback" class="container" style="margin-top: 20px; display: none;">
+        <h3>Gesamtauswertung</h3>
+        <p id="score_display"></p>
+        <p>Überprüfe die einzelnen Rückmeldungen bei den Fragen für Details. Einige Fragen (besonders im AFB 2 und 3) sind offen formuliert und werden hier nicht vollständig automatisch bewertet – besprich sie bitte mit deiner Lehrkraft.</p>
+    </div>
+
+<script>
+    const possibleFactors = ["wasser", "klima", "entwicklungszeit", "tiere", "gestein", "form/neigung", "form", "neigung", "pflanzen", "menschen"];
+
+    const correctAnswers = {
+        q3_frost: "b",
+        q5_lebewesen: "c"
+    };
+
+    const explanations = {
+         q3_frost: "Wenn Wasser zu Eis gefriert, dehnt es sich aus. Diese Ausdehnung erzeugt einen enormen Druck in Gesteinsspalten.",
+         q5_lebewesen: "Regenwürmer lockern den Boden und verbessern seine Struktur, sie verdichten ihn nicht.",
+         q8_mensch_pos_example: "Beispiele für positiven Einfluss: Kompostierung zur Humusanreicherung, Anpflanzen von Bodendeckern gegen Erosion, Fruchtfolgen in der Landwirtschaft.",
+         q8_mensch_neg_example: "Beispiele für negativen Einfluss: Bodenversiegelung durch Bebauung, Abholzung (führt zu Erosion), Überdüngung, Monokulturen (laugen Boden aus)."
+    };
+
+    function normalizeAnswer(answer) {
+        if (typeof answer !== 'string') return "";
+        return answer.toLowerCase().trim().replace(/\s+/g, ' ').replace(/[\/\(\)]/g, '');
+    }
+    
+    function checkTextInput(id, feedbackId, expectedKeywords = [], isPartialCheck = false) {
+        const element = document.getElementById(id);
+        const feedbackElement = document.getElementById(feedbackId);
+        const parentQuestionDiv = feedbackElement.closest('.question');
+        let userAnswer = normalizeAnswer(element.value);
+        let isConsideredCorrect = false;
+
+        if (userAnswer.length < 5 && !isPartialCheck) { 
+            feedbackElement.textContent = 'Bitte gib eine ausführlichere Antwort.';
+            feedbackElement.className = 'feedback incorrect';
+            parentQuestionDiv.classList.add('incorrect');
+            parentQuestionDiv.classList.remove('correct');
+            return false;
+        }
+
+        if (expectedKeywords.length > 0) {
+            let foundKeywords = 0;
+            expectedKeywords.forEach(keyword => {
+                if (userAnswer.includes(normalizeAnswer(keyword))) {
+                    foundKeywords++;
+                }
+            });
+            isConsideredCorrect = foundKeywords > 0;
+        } else {
+            isConsideredCorrect = userAnswer.length > 0;
+        }
+
+
+        if (isConsideredCorrect || isPartialCheck) {
+            feedbackElement.textContent = 'Deine Antwort wurde registriert. ';
+            if (explanations[id + '_example']) {
+                 feedbackElement.textContent += explanations[id + '_example'];
+            } else if (feedbackElement.innerHTML.includes("<i>")) {
+            } else {
+                 feedbackElement.textContent += "Besprich die Details mit deiner Lehrkraft.";
+            }
+            feedbackElement.className = 'feedback correct'; 
+            parentQuestionDiv.classList.add('correct');
+            parentQuestionDiv.classList.remove('incorrect');
+            return true; 
+        } else {
+            feedbackElement.textContent = 'Deine Antwort scheint noch nicht ganz vollständig oder korrekt zu sein. Überprüfe die Stichpunkte.';
+            feedbackElement.className = 'feedback incorrect';
+            parentQuestionDiv.classList.add('incorrect');
+            parentQuestionDiv.classList.remove('correct');
+            return false;
+        }
+    }
+
+
+    function checkAllAnswers() {
+        let score = 0;
+        let totalAttemptedOrCorrect = 0; 
+
+        let q1_correct_count = 0;
+        const q1_inputs = [document.getElementById('q1_faktor1'), document.getElementById('q1_faktor2'), document.getElementById('q1_faktor3'), document.getElementById('q1_faktor4')];
+        const entered_factors = [];
+        q1_inputs.forEach(input => {
+            let val = normalizeAnswer(input.value);
+            if (val && possibleFactors.includes(val) && !entered_factors.includes(val)) {
+                q1_correct_count++;
+                entered_factors.push(val);
+            }
+        });
+        const feedback_q1 = document.getElementById('feedback_q1');
+        const q1_div = feedback_q1.closest('.question');
+        if (q1_correct_count >= 2) { 
+            feedback_q1.textContent = `Gut! Du hast ${q1_correct_count} korrekte Faktoren genannt. Die möglichen Faktoren sind: ${possibleFactors.join(', ')}.`;
+            feedback_q1.className = 'feedback correct';
+            q1_div.classList.add('correct'); q1_div.classList.remove('incorrect');
+            score += (q1_correct_count / 2); 
+            totalAttemptedOrCorrect++;
+        } else {
+            feedback_q1.textContent = `Du hast ${q1_correct_count} korrekte Faktoren genannt. Versuche, mindestens zwei verschiedene zu finden. Mögliche Faktoren sind: ${possibleFactors.join(', ')}.`;
+            feedback_q1.className = 'feedback incorrect';
+            q1_div.classList.add('incorrect'); q1_div.classList.remove('correct');
+        }
+
+        const q2_temp_fb = document.getElementById('feedback_q2_temp');
+        const q2_temp_val = normalizeAnswer(document.getElementById('q2_temp').value);
+        if (q2_temp_val.length > 10 && (q2_temp_val.includes("temperatur") || q2_temp_val.includes("ausdehnung") || q2_temp_val.includes("zusammenziehen"))) {
+            q2_temp_fb.innerHTML = 'Antwort registriert. <i>Wichtige Stichpunkte: Temperaturunterschiede, Ausdehnung/Zusammenziehen, Zermürbung.</i>';
+            q2_temp_fb.className = 'feedback correct';
+            document.getElementById('q2_temp').closest('.question').classList.add('correct');
+            document.getElementById('q2_temp').closest('.question').classList.remove('incorrect');
+            score++; totalAttemptedOrCorrect++;
+        } else {
+            q2_temp_fb.innerHTML = 'Antwort unvollständig. <i>Wichtige Stichpunkte: Temperaturunterschiede, Ausdehnung/Zusammenziehen, Zermürbung.</i>';
+            q2_temp_fb.className = 'feedback incorrect';
+            document.getElementById('q2_temp').closest('.question').classList.add('incorrect');
+            document.getElementById('q2_temp').closest('.question').classList.remove('correct');
+        }
+        const q2_frost_fb = document.getElementById('feedback_q2_frost');
+        const q2_frost_val = normalizeAnswer(document.getElementById('q2_frost').value);
+        if (q2_frost_val.length > 10 && (q2_frost_val.includes("wasser") || q2_frost_val.includes("gefriert") || q2_frost_val.includes("sprengt"))) {
+            q2_frost_fb.innerHTML = 'Antwort registriert. <i>Wichtige Stichpunkte: Wasser in Spalten, Gefrieren, Volumenvergrößerung, Sprengwirkung.</i>';
+            q2_frost_fb.className = 'feedback correct';
+            // Ensure the parent question of q2_frost also gets styling if q2_temp was incorrect.
+            // This assumes q2_temp and q2_frost are in the same .question div, which they are.
+            document.getElementById('q2_frost').closest('.question').classList.add('correct');
+            document.getElementById('q2_frost').closest('.question').classList.remove('incorrect');
+            score++; totalAttemptedOrCorrect++; // Counted as separate part of Q2
+        } else {
+            q2_frost_fb.innerHTML = 'Antwort unvollständig. <i>Wichtige Stichpunkte: Wasser in Spalten, Gefrieren, Volumenvergrößerung, Sprengwirkung.</i>';
+            q2_frost_fb.className = 'feedback incorrect';
+            document.getElementById('q2_frost').closest('.question').classList.add('incorrect');
+             // if q2_temp was correct, but q2_frost is incorrect, the overall question should show as incorrect
+            if (!document.getElementById('q2_temp').closest('.question').classList.contains('incorrect')){
+                 // only set to incorrect if not already set by q2_temp
+            }
+        }
+        // Overall styling for Q2 based on both parts
+        const q2_overall_div = document.getElementById('q2_temp').closest('.question');
+        if (q2_temp_fb.classList.contains('correct') && q2_frost_fb.classList.contains('correct')) {
+            q2_overall_div.classList.add('correct');
+            q2_overall_div.classList.remove('incorrect');
+        } else {
+            q2_overall_div.classList.add('incorrect');
+            q2_overall_div.classList.remove('correct');
+        }
+
+
+        const q3_frost_radios = document.getElementsByName('q3_frost');
+        const feedback_q3_frost = document.getElementById('feedback_q3_frost');
+        const q3_div = feedback_q3_frost.closest('.question');
+        let q3_answered = false;
+        for (const radio of q3_frost_radios) {
+            if (radio.checked) {
+                q3_answered = true;
+                if (radio.value === correctAnswers.q3_frost) {
+                    feedback_q3_frost.textContent = 'Richtig! ' + (explanations.q3_frost || "");
+                    feedback_q3_frost.className = 'feedback correct';
+                    q3_div.classList.add('correct'); q3_div.classList.remove('incorrect');
+                    score++; totalAttemptedOrCorrect++;
+                } else {
+                    feedback_q3_frost.textContent = 'Leider falsch. ' + (explanations.q3_frost || "Überlege noch einmal, was mit Wasser beim Gefrieren passiert.");
+                    feedback_q3_frost.className = 'feedback incorrect';
+                    q3_div.classList.add('incorrect'); q3_div.classList.remove('correct');
+                }
+                break;
+            }
+        }
+        if (!q3_answered) {
+             feedback_q3_frost.textContent = 'Bitte wähle eine Antwort aus.';
+             feedback_q3_frost.className = 'feedback incorrect';
+             q3_div.classList.add('incorrect'); q3_div.classList.remove('correct');
+        }
+
+        const q4_klima_temp_fb = document.getElementById('feedback_q4_klima_temp');
+        const q4_klima_temp_val = normalizeAnswer(document.getElementById('q4_klima_temp').value);
+        const q4_div = q4_klima_temp_fb.closest('.question');
+         if (q4_klima_temp_val.length > 10 && (q4_klima_temp_val.includes("klima") || q4_klima_temp_val.includes("temperatur") || q4_klima_temp_val.includes("wüste") || q4_klima_temp_val.includes("gebirge") )) {
+            q4_klima_temp_fb.innerHTML = 'Antwort registriert. <i>Denke an Gebiete mit großen täglichen Temperaturschwankungen.</i>';
+            q4_klima_temp_fb.className = 'feedback correct';
+            q4_div.classList.add('correct'); q4_div.classList.remove('incorrect');
+            score++; totalAttemptedOrCorrect++;
+        } else {
+            q4_klima_temp_fb.innerHTML = 'Antwort unvollständig. <i>Denke an Gebiete mit großen täglichen Temperaturschwankungen.</i>';
+            q4_klima_temp_fb.className = 'feedback incorrect';
+            q4_div.classList.add('incorrect'); q4_div.classList.remove('correct');
+        }
+
+        const q5_lebewesen_radios = document.getElementsByName('q5_lebewesen');
+        const feedback_q5_lebewesen = document.getElementById('feedback_q5_lebewesen');
+        const q5_div = feedback_q5_lebewesen.closest('.question');
+        let q5_answered = false;
+        for (const radio of q5_lebewesen_radios) {
+            if (radio.checked) {
+                q5_answered = true;
+                if (radio.value === correctAnswers.q5_lebewesen) {
+                    feedback_q5_lebewesen.textContent = 'Richtig! Dies ist die falsche Aussage. ' + (explanations.q5_lebewesen || "");
+                    feedback_q5_lebewesen.className = 'feedback correct';
+                    q5_div.classList.add('correct'); q5_div.classList.remove('incorrect');
+                    score++; totalAttemptedOrCorrect++;
+                } else {
+                    feedback_q5_lebewesen.textContent = 'Leider nicht die gesuchte falsche Aussage. ' + (explanations.q5_lebewesen || "Überlege, was Regenwürmer im Boden bewirken.");
+                    feedback_q5_lebewesen.className = 'feedback incorrect';
+                    q5_div.classList.add('incorrect'); q5_div.classList.remove('correct');
+                }
+                break;
+            }
+        }
+         if (!q5_answered) {
+             feedback_q5_lebewesen.textContent = 'Bitte wähle eine Antwort aus.';
+             feedback_q5_lebewesen.className = 'feedback incorrect';
+             q5_div.classList.add('incorrect'); q5_div.classList.remove('correct');
+        }
+
+        ['q6_frost_klima', 'q6_temp_klima', 'q7_zeit'].forEach(id => {
+            const fb = document.getElementById('feedback_' + id);
+            const val = normalizeAnswer(document.getElementById(id).value);
+            const originalHint = fb.innerHTML; 
+            const q_div = fb.closest('.question');
+            if (val.length > 15) { 
+                fb.innerHTML = 'Antwort registriert. ' + originalHint.substring(originalHint.indexOf("<i>")); // Keep italic hint
+                fb.className = 'feedback correct';
+                q_div.classList.add('correct'); q_div.classList.remove('incorrect');
+                score++; totalAttemptedOrCorrect++;
+            } else {
+                fb.innerHTML = 'Antwort unvollständig. ' + originalHint.substring(originalHint.indexOf("<i>")); // Keep italic hint
+                fb.className = 'feedback incorrect';
+                q_div.classList.add('incorrect'); q_div.classList.remove('correct');
+            }
+        });
+
+
+        let q8_pos_correct = checkTextInput('q8_mensch_pos', 'feedback_q8_mensch', ["kompost", "fruchtfolge", "anpflanzen", "bewässerung"], true);
+        let q8_neg_correct = checkTextInput('q8_mensch_neg', 'feedback_q8_mensch', ["versiegelung", "abholzung", "monokultur", "überdüngung"], true);
+        const feedback_q8 = document.getElementById('feedback_q8_mensch');
+        const q8_div = feedback_q8.closest('.question');
+
+        if (document.getElementById('q8_mensch_pos').value.length > 3 && document.getElementById('q8_mensch_neg').value.length > 3) {
+            feedback_q8.innerHTML = 'Antworten registriert. <i>' + explanations.q8_mensch_pos_example + ' ' + explanations.q8_mensch_neg_example + '</i>';
+            feedback_q8.className = 'feedback correct';
+            q8_div.classList.add('correct'); q8_div.classList.remove('incorrect');
+            score++; totalAttemptedOrCorrect++;
+        } else {
+            feedback_q8.innerHTML = 'Bitte gib für beide Bereiche (positiv und negativ) einen Einfluss an. <i>' + explanations.q8_mensch_pos_example + ' ' + explanations.q8_mensch_neg_example + '</i>';
+            feedback_q8.className = 'feedback incorrect';
+            q8_div.classList.add('incorrect'); q8_div.classList.remove('correct');
+        }
+
+        let totalQuestionsForScore = 8; 
+        document.getElementById('score_display').textContent = `Du hast ca. ${Math.round(score)} von ${totalQuestionsForScore} Aufgaben(-teilen) bearbeitet oder richtig gelöst.`;
+        document.getElementById('overall_feedback').style.display = 'block';
+        document.getElementById('overall_feedback').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
